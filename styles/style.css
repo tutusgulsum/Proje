@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     border:none;
+     outline: none;
+     text-transform: capitalize;
+     transition: 0.2 ease;
+}
+:root{
+  --main-color:cadetblue;
+  --black-color:#ffffff;
+
+}
+html{
+  overflow-x: hidden;
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
+/*header başlangıcı*/
+.header{
+    margin: auto;
+    padding: 0%;
+    text-decoration: none;
+    text-align: center;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    margin:15px 7%;
+    border-radius: 200px;
+    box-shadow: 0 0 0 0 0.75;
+    font-size:large;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.nav{
+    
+    float:inline-start;
+    line-height: 80px;
+   
+  }
+
+  .nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #ffffff;
+
+  }
+  .nav .active {
+    border-bottom: 2px solid #855f07;
+    color: #ffffff;
+    padding-bottom: 5px;
+
+  }
+  .nav a:hover{
+    border-bottom: 2px solid #855f07;
+    color: #ffffff;
+  }
+
+  nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color:#ffffff;
+    
+  }
+  .header .buttons button{
+    cursor: pointer;
+    font-size: large;
+    background-color: transparent;
+  }
+  .header .buttons i{
+    color: #ffffff;
+  }
+  
+  /*içerik*/
+  .icerik{
+    min-height: 100vh;
+    background-image: url("images/nemrut4.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-top: -145px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+  }
+  .box{
+   opacity:inherit;
+   background-color: rgba(30, 112, 112, 0.3);
+    padding: 30px;
+    margin: 200px;
+    margin-top: 200px;
+  }
+  .content{
+    max-width: 400px;
+    max-height: 200px;
+    padding: 30px; 
+    margin: 5px;
+    align-items: center;
+    
+  }
+  .content h2{
+    color:whitesmoke;
+    font-size: 30px;
+   
+
+  }
+  .content h3{
+    font-size: 20px;
+    color:whitesmoke;
+    font-weight: 300;
+    padding: 10px 0;
+  }
+
+  /*footerbaşlangıcı*/
+  .footer{
+   min-width: 600px;
+   min-height: 200px;
+    padding: 0%;
+    text-decoration: none;
+    text-align: center;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+    margin:15px 7%;
+    font-size:large;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+  }
+  .footer .sayfa .link {
+   list-style-type: none;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+    color: #ffffff;
+  }
+  .footer .socials a{
+    font-size: 40px;
+    color: #ffffff;
+
+  }
