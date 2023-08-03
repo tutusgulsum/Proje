@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fallback/1.1.9/fallback.min.js" 
+    integrity="sha512-0hyw2VPVyEmXX9qNAC54OLuiShjh8pA3tWTUrBoIZWSVS94rJ6w1nZZl9VFO3qBdHBBwIFFsEIYub1uel8aaBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Web Siteme Hoşgeldiniz!</title>
+</head>
+<body class="login">
+   
+    <div class="giris-form">
+        <div class="box">
+        <form action="login.php" method="post">
+         <h1>Login</h1>
+           
+        <div style="margin: 10px;">
+            <input type="email" class="form-control" id="Username" name="Username" placeholder="kullanıcı(Username@sakarya.edu.tr)*" required="required">
+        </div>
+        <div>
+            <input type="password" class="form-control" id="Password" name="Password" placeholder="Şifre" required="required">
+            <div class="display-4" id="hatalışifre"></div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-dark btn-block btn-md active" style="color: black;"kontrol()>Giriş yap</button>
+        </div>  
+        <div class="display-4 text-danger small" id="hatalı"></div>
+</form>
+<?php
+         $kullanici =$_POST["Username"];
+         $sifre =$_POST["Password"];
+         if($kullanici && $sifre) 
+           {
+                    if($kullanici == "b125452156@sakarya.edu.tr" && $sifre=="b125452156")
+                    {  
+                        echo "HOŞGELDİNİZ ". $kullanici;
+        
+                    }
+                    else  
+                    {
+                            
+        
+                    }
+            } 
+         else 
+         {
+      
+         }
+?>
+</div>
+    </div>
+   
+
+
+ <script>
+function kontrol()
+{ 
+  if(username!="b125452156@sakarya.edu.tr" || password!="b125452156")
+  {
+      document.getElementById("hatalı").innerHTML= "YanlIş Kullanıcı Adı veya Şifre Girdiniz.";
+  }
+  else{}
+  }
+
+ </script>
+</body>
+</html>
