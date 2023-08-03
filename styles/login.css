@@ -1,0 +1,37 @@
+body{
+    background-image: url(images/nemrut4.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.box{
+    width:400px;
+    text-align: center;
+    background-color:cadetblue;
+     padding: 30px;
+     margin: 500px;
+     margin-top: 200px;
+     
+}
+
+.giris-form h1 {
+    color:whitesmoke;
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+    
+    
+}
+.form-control, .btn {
+    min-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn {        
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+
+}
