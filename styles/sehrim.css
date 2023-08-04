@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+     border:none;
+     outline: none;
+     text-transform: capitalize;
+     transition: 0.2 ease;
+}
+:root{
+  --main-color:cadetblue;
+  --black-color:#ffffff;
+
+}
+html{
+  overflow-x: hidden;
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+
+}
+/*header başlangıcı*/
+.header{
+   
+    text-decoration: none;
+    text-align: center;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12%;
+    margin:15px 7%;
+    border-radius: 200px;
+    box-shadow: 0 0 0 0 0.75;
+    font-size:large;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.nav{
+    
+    float:inline-start;
+    line-height: 80px;
+   
+  }
+
+  .nav a:link{
+    text-decoration: none;
+    margin-right: 25px;
+    color: #ffffff;
+
+  }
+  .nav .active {
+    border-bottom: 2px solid #855f07;
+    color: #ffffff;
+    padding-bottom: 5px;
+
+  }
+  .nav a:hover{
+    border-bottom: 2px solid #855f07;
+    color: #ffffff;
+  }
+
+  nav a:visited{
+    text-decoration: none;
+    margin-right: 25px;
+    color:#ffffff;
+    
+  }
+  .header .buttons button{
+    cursor: pointer;
+    font-size: large;
+    background-color: transparent;
+  }
+  .header .buttons i{
+    color: #ffffff;
+  }
+  /*içerik*/
+  
+  .images{
+    border-image-width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .paragraf{
+    flex:0 0 5rem;
+    padding: 20px;
+    
+    line-height: 25px;
+
+  }
+  .paragraf{
+    width: 400px;;
+  }
+  /*footerbaşlangıcı*/
+  .footer{
+    min-width: 800px;
+    min-height: 200px;
+     padding: 0%;
+     text-decoration: none;
+     text-align: center;
+     background-color: cadetblue;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 20%;
+     margin:15px 7%;
+     font-size:large;
+     position: sticky;
+     top: 0;
+     
+ 
+   }
+ 
+   .footer .sayfa .link {
+    list-style-type: none;
+     text-align: center;
+     margin-top: 15px;
+     padding: 5px;
+     color: #ffffff;
+   }
+   .footer .socials a{
+     font-size: 40px;
+     color: #ffffff;
+ 
+   }
